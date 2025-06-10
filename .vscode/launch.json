@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug CFD (CUDA)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/TWO_Blast_Wave",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                { "name": "OMP_NUM_THREADS", "value": "4" },
+                { "name": "OMP_PROC_BIND", "value": "TRUE" },
+                { "name": "GOMP_CPU_AFFINITY", "value": "0-3" },
+                { "name": "CUDA_VISIBLE_DEVICES", "value": "0" },
+                { "name": "CUDA_CACHE_DISABLE", "value": "0" }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/local/cuda/bin/cuda-gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Enable CUDA kernel debugging",
+                    "text": "set cuda break_on_launch application",
+                    "ignoreFailures": false
+                }
+            ],
+            "preLaunchTask": "build-2-blast-wave",
+            "logging": {
+                "engineLogging": true,
+                "trace": true
+            }
+        }
+    ]
+}

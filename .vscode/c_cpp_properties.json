@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "/usr/include/eigen3",
+                "/usr/include/c++/10",
+                "/usr/include/x86_64-linux-gnu/c++/10",
+                "/usr/include",
+                "/usr/local/cuda/include"
+            ],
+            "compilerPath": "/usr/local/cuda/bin/nvcc",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/usr/include/eigen3",
+                    "/usr/local/cuda/lib64"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "defines": [
+                "__CUDACC__",
+                "__CUDA_ARCH__=750"
+            ]
+        }
+    ],
+    "version": 4
+}
