@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/jupyter/Documents/two_blast_wave/build",
+  "command": "/usr/bin/g++  -I/usr/include/eigen3 -I/home/jupyter/Documents/two_blast_wave/include -g -fopenmp -std=gnu++17 -o CMakeFiles/main.dir/src/main_cuda.cpp.o -c /home/jupyter/Documents/two_blast_wave/src/main_cuda.cpp",
+  "file": "/home/jupyter/Documents/two_blast_wave/src/main_cuda.cpp"
+},
+{
+  "directory": "/home/jupyter/Documents/two_blast_wave/build",
+  "command": "/usr/bin/g++  -I/usr/include/eigen3 -I/home/jupyter/Documents/two_blast_wave/include -g -fopenmp -std=gnu++17 -o CMakeFiles/main.dir/src/dx_p.cpp.o -c /home/jupyter/Documents/two_blast_wave/src/dx_p.cpp",
+  "file": "/home/jupyter/Documents/two_blast_wave/src/dx_p.cpp"
+},
+{
+  "directory": "/home/jupyter/Documents/two_blast_wave/build",
+  "command": "/usr/bin/g++  -I/usr/include/eigen3 -I/home/jupyter/Documents/two_blast_wave/include -g -fopenmp -std=gnu++17 -o CMakeFiles/main.dir/src/dx_n.cpp.o -c /home/jupyter/Documents/two_blast_wave/src/dx_n.cpp",
+  "file": "/home/jupyter/Documents/two_blast_wave/src/dx_n.cpp"
+},
+{
+  "directory": "/home/jupyter/Documents/two_blast_wave/build",
+  "command": "/usr/bin/g++  -I/usr/include/eigen3 -I/home/jupyter/Documents/two_blast_wave/include -g -fopenmp -std=gnu++17 -o CMakeFiles/main.dir/src/dy_p.cpp.o -c /home/jupyter/Documents/two_blast_wave/src/dy_p.cpp",
+  "file": "/home/jupyter/Documents/two_blast_wave/src/dy_p.cpp"
+},
+{
+  "directory": "/home/jupyter/Documents/two_blast_wave/build",
+  "command": "/usr/bin/g++  -I/usr/include/eigen3 -I/home/jupyter/Documents/two_blast_wave/include -g -fopenmp -std=gnu++17 -o CMakeFiles/main.dir/src/dy_n.cpp.o -c /home/jupyter/Documents/two_blast_wave/src/dy_n.cpp",
+  "file": "/home/jupyter/Documents/two_blast_wave/src/dy_n.cpp"
+},
+{
+  "directory": "/home/jupyter/Documents/two_blast_wave/build",
+  "command": "/usr/bin/g++  -I/usr/include/eigen3 -I/home/jupyter/Documents/two_blast_wave/include -g -fopenmp -std=gnu++17 -o CMakeFiles/main.dir/src/nov_5.cpp.o -c /home/jupyter/Documents/two_blast_wave/src/nov_5.cpp",
+  "file": "/home/jupyter/Documents/two_blast_wave/src/nov_5.cpp"
+},
+{
+  "directory": "/home/jupyter/Documents/two_blast_wave/build",
+  "command": "/usr/bin/g++  -I/usr/include/eigen3 -I/home/jupyter/Documents/two_blast_wave/include -g -fopenmp -std=gnu++17 -o CMakeFiles/main.dir/src/boundary.cpp.o -c /home/jupyter/Documents/two_blast_wave/src/boundary.cpp",
+  "file": "/home/jupyter/Documents/two_blast_wave/src/boundary.cpp"
+},
+{
+  "directory": "/home/jupyter/Documents/two_blast_wave/build",
+  "command": "/usr/bin/g++  -I/usr/include/eigen3 -I/home/jupyter/Documents/two_blast_wave/include -g -fopenmp -std=gnu++17 -o CMakeFiles/main.dir/src/initial.cpp.o -c /home/jupyter/Documents/two_blast_wave/src/initial.cpp",
+  "file": "/home/jupyter/Documents/two_blast_wave/src/initial.cpp"
+},
+{
+  "directory": "/home/jupyter/Documents/two_blast_wave/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  -I/usr/include/eigen3 -I/home/jupyter/Documents/two_blast_wave/include -g --generate-code=arch=compute_75,code=[compute_75,sm_75] -std=c++17 -x cu -dc /home/jupyter/Documents/two_blast_wave/src/split_lf.cu -o CMakeFiles/main.dir/src/split_lf.cu.o",
+  "file": "/home/jupyter/Documents/two_blast_wave/src/split_lf.cu"
+}
+]

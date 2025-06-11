@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-2-blast-wave",
+            "type": "shell",
+            "command": "nvcc",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "-Xcompiler", "-fopenmp",
+                "-I${workspaceFolder}/include",
+                "-I/usr/include/eigen3",
+                "-arch=sm_75",  // 指定GPU计算能力
+                "${workspaceFolder}/src/main_cuda.cpp",
+                "${workspaceFolder}/src/split_lf.cu",
+                "${workspaceFolder}/src/dx_p.cpp",
+                "${workspaceFolder}/src/dx_n.cpp",
+                "${workspaceFolder}/src/dy_p.cpp",
+                "${workspaceFolder}/src/dy_n.cpp",
+                "${workspaceFolder}/src/boundary.cpp",
+                "${workspaceFolder}/src/initial.cpp",
+                "${workspaceFolder}/src/nov_5.cpp",
+                "-o",
+                "${workspaceFolder}/build/TWO_Blast_Wave",
+                "-L/usr/local/cuda/lib64",
+                "-lm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "solver with CUDA support"
+        }
+    ]
+}
