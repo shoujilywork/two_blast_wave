@@ -27,9 +27,12 @@ The simulation captures ​​collisions between blast waves​​ and their ref
 ​​Application Scenarios​​
 The computational grid (65×65, domain x∈[0,2], y∈[0,1.1]) is optimized for small-scale blast experiments.
 A ​​V-shaped boundary​​ (tan35 slope) represents blast wave interaction with inclined surfaces
+
 ​​Numerical Methods​​
+
 ​​Explicit time integration (RK4)​​ for stable time stepping.
 ​​High-resolution scheme for derivative and discontinuities
 Initial pressure (p = 5/7) matches the ​​Friedlander waveform​​ theory for blast overpressure.
 ​​Conclusion​​
+
 This code simulates ​​2D blast wave collisions and their interaction with geometric boundaries​​, serving as a benchmark for ​​computational dynamics​​.
