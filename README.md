@@ -33,6 +33,7 @@ A ​​V-shaped boundary​​ (tan35 slope) represents blast wave interaction 
 ​​Explicit time integration (RK4)​​ for stable time stepping.
 ​​High-resolution scheme for derivative and discontinuities
 Initial pressure (p = 5/7) matches the ​​Friedlander waveform​​ theory for blast overpressure.
+
 ​​Conclusion​​
 
 This code simulates ​​2D blast wave collisions and their interaction with geometric boundaries​​, serving as a benchmark for ​​computational dynamics​​.
