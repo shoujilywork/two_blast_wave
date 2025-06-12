@@ -19,18 +19,17 @@ This program simulates the ​​interaction of two blast waves​​ in a 2D do
 
 ​​Physical Model​​
 Solves the ​​Euler equations​​ for compressible flow, modeling blast wave propagation and interaction.
-Uses ​​Lax-Friedrichs flux splitting​​ and WUCS​ (nov_5 function) for shock-capturing.
+Uses ​​Lax-Friedrichs flux splitting​​ and high order scheme for shock-capturing.
 Initial conditions (e.g., u = 1.86, p = 0.99) are set for typical blast wave dynamics.
 ​​Two-Wave Interaction Mechanism​​
 The split_lf function computes fluxes in both ​​x and y directions​​, enabling multi-dimensional wave interactions.
-The simulation captures ​​collisions between blast waves​​ and their reflection from boundaries (similar to [9] in references).
+The simulation captures ​​collisions between blast waves​​ and their reflection from boundaries.
 ​​Application Scenarios​​
-Models ​​explosions in confined spaces​​ (e.g., underground blasts or mine explosions, as in [5][7]).
 The computational grid (65×65, domain x∈[0,2], y∈[0,1.1]) is optimized for small-scale blast experiments.
 A ​​V-shaped boundary​​ (tan35 slope) represents blast wave interaction with inclined surfaces
 ​​Numerical Methods​​
 ​​Explicit time integration (RK4)​​ for stable time stepping.
-​​High-resolution WUCS for derivative and discontinuities
+​​High-resolution scheme for derivative and discontinuities
 Initial pressure (p = 5/7) matches the ​​Friedlander waveform​​ theory for blast overpressure.
 ​​Conclusion​​
 This code simulates ​​2D blast wave collisions and their interaction with geometric boundaries​​, serving as a benchmark for ​​computational dynamics​​.
